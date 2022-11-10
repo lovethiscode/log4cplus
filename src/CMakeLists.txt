@@ -137,8 +137,8 @@ if (MINGW AND LOG4CPLUS_MINGW_STATIC_RUNTIME)
 endif ()
 
 if (WIN32)
-  set_target_properties (${log4cplus} PROPERTIES
-    DEBUG_POSTFIX "D")
+  #[[set_target_properties (${log4cplus} PROPERTIES
+    DEBUG_POSTFIX "D")]]
   target_link_libraries (${log4cplus} ws2_32 advapi32)
 endif ()
 
